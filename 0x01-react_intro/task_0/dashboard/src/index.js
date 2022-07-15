@@ -5,7 +5,7 @@ export default function App() {
   return (
   <div className="App">
     <div className="App-header">
-        <img className="" src="Holberton-Logo.jpg"/>
+        <img className="App-logo" src= { logo } alt="logo"/>
         <h1>School dashboard</h1>
     </div>
     <div className="App-body">
