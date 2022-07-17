@@ -11,7 +11,7 @@ function Notifications(){
         style={{ position: 'absolute', top: '7px', right: '7px', border: 'none', background: 'none', padding: '0' }} 
         aria-label='close'
         onClick={console.log('Close button has been clicked')}>
-          <img src={close} alt='close-icon' style={{ display: 'inline', marginTop: '5px', marginRight: '5px', padding: '0' }} ></img>
+          <img src={close} alt='close-icon' style={{ display: 'inline', marginTop: '5px', marginRight: '5px', padding: '0' }} width='15px'></img>
         </button>
         <ul>
           <li data='default'>New course available</li>
