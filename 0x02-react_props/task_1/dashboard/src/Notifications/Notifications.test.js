@@ -1,4 +1,5 @@
 import React from 'react';
+import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import Notifications from './Notifications';
 
@@ -11,19 +12,15 @@ describe("Testing the <Notifications /> Component", () => {
   });
 
   it("<Notifications /> is rendered without crashing", () => {
-    expect(wrapper).toBeDefined();
+    expect(wrapper).to.not.be.an('undefined');
   });
 
-  it("<Notifications /> renders NotificationItems", () => {
-    expect(wrapper.find('NotificationItem')).toHaveLength(3);
+  it("<Notifications /> renders three list items", () => {
+    expect(wrapper.find('li')).to.have.lengthOf(3);
   });
 
   it("<Notifications /> render the text 'Here is the list of notifications'", () => {
-    expect(wrapper.contains(<p>Here is the list of notifications</p>)).toEqual(true);
-  });
-
-  it("verify that the first NotificationItem element renders the right html", () => {
-    expect(wrapper.find("NotificationItem").first().html()).toEqual('<li data-notification-type="default">New course available</li>');
+    expect(wrapper.contains(<p>Here is the list of notifications</p>)).to.equal(true);
   });
 
 });
