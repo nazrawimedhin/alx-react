@@ -1,6 +1,6 @@
 # alx-react
 
-Module of **React**, carried out during **Full Stack Software Engineering studies** at **[ALX School](https://www.alxafrica.com)**.
+Module of **alx-react**, carried out during **Full Stack Software Engineering studies** at **[ALX School](https://www.alxafrica.com)**.
 
 ## Technologies
 
